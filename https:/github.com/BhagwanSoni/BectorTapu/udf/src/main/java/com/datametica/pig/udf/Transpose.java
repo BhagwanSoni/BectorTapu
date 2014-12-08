@@ -15,9 +15,9 @@ import org.apache.pig.builtin.IsEmpty;
 class Transpose {
 	public static void main(String[] args) throws IOException {
 		File file = new File(
-				"Input_File_Path");
-		FileReader in = new FileReader(
 				"Output_File_Path");
+		FileReader in = new FileReader(
+				"Input_File_Path");
 		FileWriter fw = new FileWriter(file.getAbsoluteFile());
 		BufferedReader br = new BufferedReader(in);
 		BufferedWriter bw = new BufferedWriter(fw);
