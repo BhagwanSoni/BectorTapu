@@ -15,9 +15,9 @@ import org.apache.pig.builtin.IsEmpty;
 class Transpose {
 	public static void main(String[] args) throws IOException {
 		File file = new File(
-				"/home/bhagwan/workspace/dataprofile/Transpose/target/file");
+				"Input_File_Path");
 		FileReader in = new FileReader(
-				"/home/bhagwan/workspace/dataprofile/Transpose/target/file_out");
+				"Output_File_Path");
 		FileWriter fw = new FileWriter(file.getAbsoluteFile());
 		BufferedReader br = new BufferedReader(in);
 		BufferedWriter bw = new BufferedWriter(fw);
@@ -39,7 +39,7 @@ class Transpose {
 		FileReader input;
 		try {
 			input = new FileReader(
-					"/home/bhagwan/workspace/dataprofile/Transpose/target/file_out");
+					"Input_File_Path");
 			BufferedReader br1 = new BufferedReader(input);
 
 			while ((line = br1.readLine()) != null) {
