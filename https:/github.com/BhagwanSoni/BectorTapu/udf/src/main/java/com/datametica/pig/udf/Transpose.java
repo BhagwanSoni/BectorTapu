@@ -1,5 +1,3 @@
-package com.datametica.pig.udf;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
